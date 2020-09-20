@@ -36,21 +36,18 @@ export default App;
 
 
 //child component 
+import React from 'react'
 
+class Cat extends React.Component {
 
+    render() {
+        return (
+            <div className="catCard">
+                <h1>{this.props.name}</h1>
+                <p>{this.props.color}</p>
+            </div>
+        )
+    }
+}
 
-// // tile.js //child
-// import React from 'react'
-
-// class Tile extends React.Component {
-//   render() {
-//       return( 
-//       <div className="tile">
-//       <h1>{this.props.name}</h1>
-//       <p>{this.props.toy}</p>
-//     </div>
-//     )
-//   }
-// }
-
-// export default Tile
+export default Cat
